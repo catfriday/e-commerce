@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { commerce } from "./lib/Commerce.js";
+import ProductsList from "./components/ProductsList";
+import "./style/scss/style.scss";
 
-// import './style/scss/style.scss'
 const App = () => {
   const [products, setproducts] = useState([]);
 
@@ -20,7 +21,11 @@ const App = () => {
       });
   };
 
-  return <div className="app"></div>;
+  return (
+    <div className="app">
+      <ProductsList products={products} />
+    </div>
+  );
 };
 
 export default App;
