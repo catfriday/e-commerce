@@ -1,11 +1,9 @@
-import React from "react";
-import "./styles.css";
+import React, { useState } from "react";
+import { commerce } from "./lib/Commerce.js";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello Women Who Code</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
+// import './style/scss/style.scss'
+const App = () => {
+  const [products, setproducts] = useState([]);
+};
+
+export default App;
