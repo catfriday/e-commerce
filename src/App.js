@@ -5,6 +5,7 @@ import "./style/scss/style.scss";
 
 const App = () => {
   const [products, setproducts] = useState([]);
+  const [cart, setCart] = useState({});
 
   useEffect(() => {
     fetchProducts();
@@ -18,6 +19,17 @@ const App = () => {
       })
       .catch((error) => {
         console.log("there was an error fetching the product", error);
+      });
+  };
+
+  const fetchCart = () => {
+    commerce.cart
+      .retrieve()
+      .then((cart) => {
+        setCart(cart);
+      })
+      .catch((err) => {
+        console.log("there was an error getching cart", error);
       });
   };
 
