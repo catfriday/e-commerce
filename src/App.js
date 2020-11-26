@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { commerce } from "./lib/Commerce.js";
 import ProductsList from "./components/ProductsList";
-import "./style/scss/style.scss";
+// import "./style/scss/style.scss";
 
 const App = () => {
   const [products, setproducts] = useState([]);

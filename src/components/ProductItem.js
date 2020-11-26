@@ -18,7 +18,7 @@ const ProductItem = ({ product }) => {
           <button
             name="Add to cart"
             className="product__btn"
-            onClick={handleAddToCart}
+            // onClick={handleAddToCart}
           >
             Quick add
           </button>
