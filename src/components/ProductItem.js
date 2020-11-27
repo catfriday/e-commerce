@@ -1,19 +1,20 @@
 import React from "react";
 
-const ProductItem = ({ product }) => {
+// const ProductItem = ({ product }) => {
+const ProductItem = (props) => {
   return (
     <div className="product">
       <img
         className="product__image"
-        src={product.media.source}
-        alt={product.name}
+        src={props.product.media.source}
+        alt={props.product.name}
       />
       <div className="product__info">
-        <h4 className="product__name">{product.name}</h4>
+        <h4 className="product__name">{props.product.name}</h4>
         <p className="product__description"></p>
         <div className="product__details">
           <p className="product__price">
-            {product.price.formatted_with_symbol}
+            {props.product.price.formatted_with_symbol}
           </p>
           <button
             name="Add to cart"
