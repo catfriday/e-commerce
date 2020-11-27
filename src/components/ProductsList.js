@@ -1,13 +1,14 @@
 import React from "react";
 import ProductItem from "./ProductItem";
 
-const ProductsList = ({ products, onAddToCart }) => (
+// const ProductsList = ({ products, onAddToCart }) => (
+const ProductsList = (props) => (
   <div className="products" id="products">
-    {products.map((product) => (
+    {props.products.map((product) => (
       <ProductItem
         key={product.id}
         product={product}
-        onAddToCart={onAddToCart}
+        onAddToCart={props.onAddToCart}
       />
     ))}
   </div>
