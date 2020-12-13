@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Hero = (props) => (
+  // {(merchant)} alternative
   <div className="hero">
     <img src="img/logo.svg" alt="Logo" />
     <div className="hero__text">
