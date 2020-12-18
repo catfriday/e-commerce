@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Hero = (props) => (
-  // {(merchant)} alternative
+const Hero = ({ merchant }) => (
+  // console.log({merchant})
   <div className="hero">
     <img src="img/logo.svg" alt="Logo" />
     <div className="hero__text">
-      <h1>{props.merchant.business_name}</h1>
+      <h1>{merchant.business_name}</h1>
       <a href="#products" className="btn">
         Shop
       </a>
@@ -14,8 +14,8 @@ const Hero = (props) => (
   </div>
 );
 
-Hero.propTypes = {
-  merchant: PropTypes.object
-};
+// Hero.propTypes = {
+//   merchant: PropTypes.object
+// };
 
 export default Hero;
