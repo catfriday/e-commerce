@@ -14,8 +14,8 @@ const Hero = ({ merchant }) => (
   </div>
 );
 
-// Hero.propTypes = {
-//   merchant: PropTypes.object
-// };
+Hero.propTypes = {
+  merchant: PropTypes.object
+};
 
 export default Hero;
